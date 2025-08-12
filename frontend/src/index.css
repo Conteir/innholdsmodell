@@ -1,0 +1,198 @@
+/* Generelle stiler */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Tabellstiler for attributtoversikt */
+.attribute-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.attribute-table th {
+  background-color: #2d3748;
+  color: white;
+  padding: 1rem;
+  text-align: left;
+}
+
+.attribute-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+/* Sebrastriper */
+.attribute-table tr:nth-child(even) {
+  background-color: #f7fafc;
+}
+
+.attribute-table tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+/* Hover-effekt */
+.attribute-table tr:hover {
+  background-color: #edf2f7;
+  transition: background-color 0.2s ease;
+}
+
+/* Responsivitet */
+@media (max-width: 640px) {
+  .attribute-table th,
+  .attribute-table td {
+    padding: 0.5rem;
+    font-size: 0.875rem;
+  }
+  .attribute-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+/* Generelle kortstiler (for ContentTypeTable) */
+.content-card {
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.content-card h3 {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.content-card p {
+  margin: 0.25rem 0;
+  color: #4a5568;
+}
+
+/* Container for hele komponenten */
+.container {
+  padding: 1rem;
+}
+
+/* Søk og filter-seksjon */
+.search-container {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.search-input {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  width: 100%;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #2b6cb0;
+}
+
+.filter-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.filter-label {
+  display: flex;
+  align-items: center;
+}
+
+.filter-radio {
+  margin-right: 0.25rem;
+}
+
+/* Grid for kort */
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Header inne i kort */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Ekspander-knapp */
+.expand-button {
+  background: none;
+  border: none;
+  color: #2b6cb0;
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+
+.expand-button:hover {
+  color: #2c5282;
+}
+
+/* Attributt-seksjon */
+.attribute-section {
+  margin-top: 0.5rem;
+}
+
+.attribute-title {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.attribute-list {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+.attribute-item {
+  padding: 0.25rem 0;
+}
+
+/* Nye farger for attributter */
+.core-attribute {
+  color: #38a169; /* Grønn for kjerneattributter */
+  font-weight: bold;
+}
+
+.specific-attribute {
+  color: #e53e3e; /* Rød for spesifikke attributter */
+}
+
+.attribute-type {
+  color: #718096; /* Grå for type */
+}
+
+.attribute-description {
+  color: #4a5568; /* Grå for beskrivelse */
+}
+
+/* Stil for lastemelding */
+.loading-message {
+  text-align: center;
+  padding: 1rem;
+  color: #4a5568;
+}

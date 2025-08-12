@@ -1,0 +1,14 @@
+{
+  "contentTypes": [
+    {
+      "name": "Artikkel",
+      "technicalName": "artikkel",
+      "specificAttributes": ["Virkestoff"]
+    },
+    {
+      "name": "Legemiddel produkt",
+      "technicalName": "legemiddelProduktPakning",
+      "specificAttributes": ["Virkestoff"]
+    }
+  ]
+}

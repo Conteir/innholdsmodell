@@ -1,0 +1,43 @@
+{
+  "attributes": [
+    {
+      "Feltnavn (redaktørverktøy)": "Tittel",
+      "Feltnavn (teknisk)": "tittel",
+      "Funksjon": "Innhold",
+      "Kjerneattributt": true,
+      "Type": "TextLine",
+      "Påkrevd": true,
+      "Flervalg": false,
+      "Vises i Enonic": true,
+      "Feltnavn API": "tittel",
+      "Type (API)": "string",
+      "Beskrivelse": "Attributtet angir tittel på et innholdsobjekt."
+    },
+    {
+      "Feltnavn (redaktørverktøy)": "Intro",
+      "Feltnavn (teknisk)": "intro",
+      "Funksjon": "Innhold",
+      "Kjerneattributt": true,
+      "Type": "HtmlArea",
+      "Påkrevd": false,
+      "Flervalg": false,
+      "Vises i Enonic": true,
+      "Feltnavn API": "intro",
+      "Type (API)": "string",
+      "Beskrivelse": "Attributtet benyttes til å gi en kort oppsumering av innholdet."
+    },
+    {
+      "Feltnavn (redaktørverktøy)": "Virkestoff",
+      "Feltnavn (teknisk)": "virkestoff",
+      "Funksjon": "Metadata",
+      "Kjerneattributt": false,
+      "Type": "CustomSelector",
+      "Påkrevd": false,
+      "Flervalg": true,
+      "Vises i Enonic": true,
+      "Feltnavn API": "virkestoff",
+      "Type (API)": "array",
+      "Beskrivelse": "Definerer aktuelt virkestoff. SCTID 23951000202100"
+    }
+  ]
+}
